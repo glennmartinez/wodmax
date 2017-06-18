@@ -1,0 +1,33 @@
+{
+  "name": "wodmax",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node server.js",
+  "scripts": {
+    "webpack-watch": "webpack -w",
+    "express-server": "node ./server",
+    "dev": "concurrent --kill-others \"npm run webpack-watch\" \"npm run express-server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "express": "^4.15.3",
+    "express-winston": "^2.4.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "webpack": "^2.6.1",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.4.0"
+  }
+}
