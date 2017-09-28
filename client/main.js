@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { browserHistory } from 'react-router';
+import Routes from './routes';
 
-import  App  from './components/app';
+// import registerServiceWorker from './registerServiceWorker';
+// import './index.css';
 
 ReactDOM.render(
-   <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById('root')
-);
+  <Routes />, document.getElementById('root'));
+// registerServiceWorker();

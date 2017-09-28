@@ -5,8 +5,10 @@ require('babel-register');
 const app = express()
 
 app.use(express.static('public'))
+app.set('view engine', 'html');
+app.use(express.static(__dirname + '/public'));
 
-
+app.listen(4000);
 // // Handles all routes so you do not get a not found error
 // app.get('*', function (request, response){
 //     response.sendFile('public/index.html' , { root : __dirname});
@@ -16,7 +18,9 @@ app.use(express.static('public'))
 
 app.get('/', function (req, res) {
   console.log('test it out');
-  res.send('Hello World!');
+   res.send('Hello World!');
+  // res.render('index', { title: 'Express' });
+  
 
 })
 
